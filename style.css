@@ -6,7 +6,7 @@
 .navbar{
   margin: -15px -26px;
   padding: 1px 0px;
-  background-color: rgb(73, 72, 72);
+  background-color: rgb(31, 29, 29);
 }
 .navbar li{
   float: left;
@@ -29,4 +29,7 @@
 .row{
     text-align: center;
 }
-
+div h1{
+  text-align: center;
+  text-decoration: double;
+}
