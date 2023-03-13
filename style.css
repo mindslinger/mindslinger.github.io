@@ -19,7 +19,8 @@
 .navbar a{
   padding: 1px 9px;
   text-decoration: none;
-  color: rgb(218, 211, 211);;
+  color: rgb(218, 211, 211);
+  font-size: 25px;
 }
 .navbar a:hover {
   color: white;
@@ -39,9 +40,9 @@
   border-width: 1px;
   background-color: white;
   border-radius: 15px;
-  overflow: auto;
   border-color: black;
-  ;
+  height: fit-content;
+  width: 400px; 
 }
 .card img{
   border-radius: 6px;
@@ -63,7 +64,15 @@
   border-style: groove;
   
 }
-.center{
+.flex-container {
   text-align: center;
   overflow: auto;
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap ;
+  align-content: space-between;
+  justify-content: space-between;
+  background-color: #f0f0f5;
+  margin: 0%;
 }
+
