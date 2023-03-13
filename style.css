@@ -6,7 +6,10 @@
 .navbar{
   margin: -15px -26px;
   padding: 1px 0px;
-  background-color: rgb(31, 29, 29);
+  background-color: #201f1d;
+  /* #e87004 */
+  /* #e87004 */
+  
 }
 .navbar li{
   float: left;
@@ -22,14 +25,45 @@
   color: white;
 
 }
-.td{
-  text-align: center;  
-  padding-left: 10px;
-}
-.row{
-    text-align: center;
-}
-div h1{
+.heading{
   text-align: center;
-  text-decoration: double;
+  background-color: rgb(0, 0, 0);
+  margin: 16px -71px;
+  margin-top: -7px;
+}
+.card{
+  text-align: center;
+  margin: 15px 14px;
+  padding: 1px 25px;
+  border-style: groove;
+  border-width: 1px;
+  background-color: white;
+  border-radius: 15px;
+  overflow: auto;
+  border-color: black;
+  ;
+}
+.card img{
+  border-radius: 6px;
+  border: 1px;
+  border-color: black;
+  border-style: groove;
+  border-radius: 15px;
+  margin: 12px -4px;
+  float: inline-end;
+}
+.card div{
+  text-align: left;
+  float: left;
+}
+.card:hover{
+  background-color: whitesmoke;
+  border-color: black;
+  border-width: 1px;
+  border-style: groove;
+  
+}
+.center{
+  text-align: center;
+  overflow: auto;
 }
