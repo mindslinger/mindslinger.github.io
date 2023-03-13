@@ -4,7 +4,7 @@
 
 }
 .navbar{
-  margin: -15px -26px;
+  margin: -15px -9px;
   padding: 1px 0px;
   background-color: #201f1d;
   /* #e87004 */
@@ -28,7 +28,7 @@
 .heading{
   text-align: center;
   background-color: rgb(0, 0, 0);
-  margin: 16px -71px;
+  margin: 16px -8px;
   margin-top: -7px;
 }
 .card{
