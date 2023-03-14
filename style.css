@@ -116,3 +116,60 @@ body{
     padding: 50px;
     font-size: larger;
 }
+footer{
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  padding: 1px 0px;
+  overflow: auto;
+  
+}
+footer div{
+  /* padding-left: 20px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  overflow: auto;
+}
+.foot{
+  color: white;
+  padding: 0px 20px;
+  font-size: 20px;
+}
+footer p{
+  
+  padding: 0px 20px;
+  color: white;
+}
+footer ul{
+  color: white;
+  /* padding: 0p; */
+  
+}
+button{
+  color: blue;
+  background-color: black;
+  border-radius: 6px;
+  border-color: blue;
+  margin: 5px 3px;
+  height: 30px;
+}
+button:hover{
+  color: white;
+  background-color: blue;
+}
+.anurag{
+  background-color: black;
+  flex: none;
+  padding: 3px 3px;
+  
+}
+
+.anurag p{
+  color: white;
+  
+  text-align: center;
+  background-color: black;
+}
