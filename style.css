@@ -106,6 +106,7 @@ body{
     padding-bottom: 40px;
     font-family: system-ui;
     font-size: medium;
+    flex-flow: row wrap ;
 }
 
 .container-bottom {
