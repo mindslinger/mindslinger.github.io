@@ -7,7 +7,7 @@ body{
 
 }
 .navbar{
-  margin: -15px -9px;
+  margin: -15px 0px;
   padding: 1px 0px;
   background-color: #201f1d;
   /* #e87004 */
@@ -32,7 +32,7 @@ body{
 .heading{
   text-align: center;
   background-color: rgb(0, 0, 0);
-  margin: 15px -8px;
+  margin: 15px 0px;
   margin-top: -7px;
 }
 .card{
@@ -94,4 +94,25 @@ body{
 }
 .hero_css p{
   margin: 29px 34px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-family: system-ui;
+    font-size: medium;
+}
+
+.container-bottom {
+    display: flex;
+    background-color: black;
+    color: white;
+    justify-content: center;
+    padding: 50px;
+    font-size: larger;
 }
