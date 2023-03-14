@@ -20,7 +20,7 @@
   padding: 1px 9px;
   text-decoration: none;
   color: rgb(218, 211, 211);
-  font-size: 25px;
+  font-size: 18px;
 }
 .navbar a:hover {
   color: white;
@@ -64,6 +64,10 @@
   border-style: groove;
   
 }
+.card a{
+  text-decoration: none;
+  color: black;
+}
 .flex-container {
   text-align: center;
   overflow: auto;
@@ -71,8 +75,20 @@
   flex-direction: row;
   flex-flow: row wrap ;
   align-content: space-between;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   background-color: #f0f0f5;
   margin: 0%;
 }
-
+.hero_css{
+  border-style: groove;
+  border-radius: 15px;
+  margin: 50px 9px;
+  background-color:  #f0f0f5;
+}
+.hero_css h1{
+  background-color: aqua;
+  text-align: center;
+}
+.hero_css p{
+  margin: 29px 34px;
+}
