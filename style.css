@@ -76,11 +76,14 @@ body{
   overflow: auto;
   display: flex;
   flex-direction: row;
+  align-content: stretch;
   flex-flow: row wrap ;
   align-content: space-between;
-  /* justify-content: space-between; */
+  justify-content: space-evenly;
   background-color: #f0f0f5;
   margin: 0%;
+  flex-wrap: wrap;
+  align-items: flex-start;
 }
 .hero_css{
   border-style: groove;
