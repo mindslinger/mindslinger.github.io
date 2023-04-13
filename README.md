@@ -1,1 +1,0 @@
-# mindslinger.github.io
