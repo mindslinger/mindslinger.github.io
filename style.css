@@ -1,0 +1,48 @@
+.heading h1 {
+  animation: myanimation;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes myanimation {
+    from{
+        color:#fff
+    }
+    to{
+        color: #990011ff;
+        
+    }
+}
+
+
+.display h2 {
+  background-color: aliceblue;
+  padding-bottom: 3px;
+}
+.box{
+    margin-top: 10px;
+    text-align: center;
+    background-color: black;
+    height: 30px;
+    width: 30px;
+    animation: animate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes animate{
+    from{
+        width: 30px;
+        border-radius: 100px;
+        /* height: 30px; */
+        background-color: white;
+    }
+    to{
+        width: 100%;
+        border-radius: 0px;
+        /* height: 100% */
+        background-color:#990011ff;
+    }
+}
