@@ -1,39 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rateit</title>
     <style>
-        
         @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
-        *{
+
+        * {
             padding: 0px 0px;
             margin: 0px 0px;
         }
-        .container{
+
+        .container {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
         }
-        .logo{
+
+        .logo {
             font-family: 'Dancing Script', cursive;
             font-size: 13vw;
             align-self: center;
         }
-        .text{
+
+        .text {
             font-family: 'Open Sans', sans-serif;
             font-size: 20px;
             /* font-weight: bolder; */
             align-self: center;
         }
-        .btnholder{
+
+        .btnholder {
             margin-top: 30px;
         }
-        .btnholder button{
+
+        .btnholder button {
             margin: 10px 3px;
             padding: 10px 0px;
             width: 12vw;
@@ -42,13 +48,37 @@
             color: black;
             border-radius: 5px;
         }
-        .btnholder button:hover{
+
+        .btnholder button:hover {
             color: white;
             background-color: black;
 
         }
+
+        /* Adjust font size for mobile: */
+        @media (max-width: 480px) {
+            .logo {
+                font-size: 20vw;
+                margin-bottom: 20px;
+            }
+
+            .text {
+                padding: 0px 30px;
+                font-size: 5vw;
+            }
+
+            .btnholder button {
+                padding: 10px 10px;
+                width: auto;
+            }
+
+            .btnholder {
+                margin-top: 20px;
+            }
+        }
     </style>
 </head>
+
 <body>
     <div class="container">
         <p class="logo">Rateit</p>
@@ -59,12 +89,13 @@
         </div>
     </div>
     <script>
-        function login(){
-            window.open('login.html','_self');
+        function login() {
+            window.open('login.html', '_self');
         }
-        function signup(){
-            window.open('signup.html','_self');
+        function signup() {
+            window.open('signup.html', '_self');
         }
     </script>
 </body>
+
 </html>
