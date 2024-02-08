@@ -44,10 +44,12 @@
         margin: 10px 10px;
         width: 120px;
     }
-    input{
+
+    input {
         padding: 10px 10px;
         margin: 5px 5px;
     }
+
     button {
         margin: 5px 5px;
         padding: 10px 10px;
@@ -61,23 +63,40 @@
         background-color: black;
         color: white;
     }
-    p{
+
+    p {
         font-family: 'Open Sans', sans-serif;
     }
-    #namearea{
+
+    #namearea {
         display: none;
     }
-    #contactarea{
+
+    #contactarea {
         display: none;
     }
-    #usernamearea{
+
+    #usernamearea {
         display: none;
     }
-    #passwordarea{
+
+    #passwordarea {
         display: none;
     }
-    #alreadyanaccount{
+
+    #alreadyanaccount {
         margin-top: 5px;
+    }
+
+    /* Adjust font size for mobile: */
+    @media (max-width: 480px) {
+        body {
+            font-size: 5vw;
+        }
+
+        .logo {
+            font-size: 8vh;
+        }
     }
 </style>
 
@@ -236,15 +255,15 @@
         </div>
         <div class="displayarea" id="passwordarea">
             <input type="password" name="password" id="password" placeholder="Enter Your password">
-            <button onclick="passwordsubmit()" >Submit</button>
+            <button onclick="passwordsubmit()">Submit</button>
         </div>
     </div>
     <script>
-        function handleyearchange(){
+        function handleyearchange() {
             var month = document.getElementById("month");
             var year = document.getElementById("year");
-            month.disabled=false;
-            year.disabled=true;
+            month.disabled = false;
+            year.disabled = true;
         }
         function handlemonthchange() {
             var month = document.getElementById("month").value;
@@ -276,70 +295,70 @@
             }
             var date = document.getElementById("date");
             var month = document.getElementById("month");
-            date.disabled=false;
-            month.disabled=true;
+            date.disabled = false;
+            month.disabled = true;
         }
-        function handledatechange(){
+        function handledatechange() {
             var date = document.getElementById("date");
             var btn = document.getElementById("submit");
-            date.disabled=true;
-            btn.disabled=false;
+            date.disabled = true;
+            btn.disabled = false;
         }
         function dob() {
             var date = document.getElementById("date").value;
             var month = document.getElementById("month").value;
             var year = document.getElementById("year").value;
-            var datearea =document.getElementById("datearea");
-            datearea.style.display="none";
-            const datelist=[date,month,year];
+            var datearea = document.getElementById("datearea");
+            datearea.style.display = "none";
+            const datelist = [date, month, year];
             console.log(datelist);
             var namearea = document.getElementById("namearea");
-            namearea.style.display="flex";
+            namearea.style.display = "flex";
         }
-        function clean(){
+        function clean() {
             var year = document.getElementById("year");
-            var month =document.getElementById("month");
+            var month = document.getElementById("month");
             var date = document.getElementById("date");
             var btn = document.getElementById("submit");
-            year.disabled=false;
-            month.disabled=true;
-            date.disabled=true;
-            btn.disabled=true;
+            year.disabled = false;
+            month.disabled = true;
+            date.disabled = true;
+            btn.disabled = true;
         }
-        function namesubmit(){
-            var first_name =document.getElementById("first_name").value ;
-            var last_name = document.getElementById("last_name").value ;
-            const namelist= [first_name,last_name];
+        function namesubmit() {
+            var first_name = document.getElementById("first_name").value;
+            var last_name = document.getElementById("last_name").value;
+            const namelist = [first_name, last_name];
             console.log(namelist);
             var namearea = document.getElementById("namearea");
-            namearea.style.display="none";
-            var contactarea=document.getElementById("contactarea");
+            namearea.style.display = "none";
+            var contactarea = document.getElementById("contactarea");
             contactarea.style.display = "flex";
         }
-        function contactubmit(){
-            var contactarea= document.getElementById("contactarea");
-            var contact =document.getElementById("phoneno").value;
-            var email =document.getElementById("email").value;
+        function contactubmit() {
+            var contactarea = document.getElementById("contactarea");
+            var contact = document.getElementById("phoneno").value;
+            var email = document.getElementById("email").value;
             console.log(contact);
             console.log(email);
-            contactarea.style.display="none";
-            var usernamearea =document.getElementById("usernamearea");
-            usernamearea.style.display="flex";
+            contactarea.style.display = "none";
+            var usernamearea = document.getElementById("usernamearea");
+            usernamearea.style.display = "flex";
         }
-        function usernamesubmit(){
-            var username =document.getElementById("username").value;
-            var usernamearea =document.getElementById("usernamearea");
-            usernamearea.style.display="none";
+        function usernamesubmit() {
+            var username = document.getElementById("username").value;
+            var usernamearea = document.getElementById("usernamearea");
+            usernamearea.style.display = "none";
             console.log(username);
-            var passwordarea =document.getElementById("passwordarea");
-            passwordarea.style.display="flex";
+            var passwordarea = document.getElementById("passwordarea");
+            passwordarea.style.display = "flex";
         }
-        function passwordsubmit(){
-            var password=document.getElementById("password").value;
+        function passwordsubmit() {
+            var password = document.getElementById("password").value;
             console.log(password);
-            window.open("/login","_self");
+            window.open("/login", "_self");
         }
-        
+
     </script>
 </body>
 
