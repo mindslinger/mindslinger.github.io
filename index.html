@@ -1,101 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rateit</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
-
-        * {
-            padding: 0px 0px;
-            margin: 0px 0px;
-        }
-
-        .container {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-
-        .logo {
-            font-family: 'Dancing Script', cursive;
-            font-size: 13vw;
-            align-self: center;
-        }
-
-        .text {
-            font-family: 'Open Sans', sans-serif;
-            font-size: 20px;
-            /* font-weight: bolder; */
-            align-self: center;
-        }
-
-        .btnholder {
-            margin-top: 30px;
-        }
-
-        .btnholder button {
-            margin: 10px 3px;
-            padding: 10px 0px;
-            width: 12vw;
-            background-color: white;
-            border: black solid 1px;
-            color: black;
-            border-radius: 5px;
-        }
-
-        .btnholder button:hover {
-            color: white;
-            background-color: black;
-
-        }
-
-        /* Adjust font size for mobile: */
-        @media (max-width: 480px) {
-            .logo {
-                font-size: 20vw;
-                margin-bottom: 20px;
-            }
-
-            .text {
-                padding: 0px 30px;
-                font-size: 5vw;
-            }
-
-            .btnholder button {
-                padding: 10px 10px;
-                width: auto;
-            }
-
-            .btnholder {
-                margin-top: 20px;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Amulya Rattan</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="container">
-        <p class="logo">Rateit</p>
-        <p class="text">Log in or Signup to rate images and videos of your friends and family. </p>
-        <div class="btnholder">
-            <button class="text" onclick="login()">Login</button>
-            <button class="text" onclick="signup()">Signup</button>
-        </div>
-    </div>
-    <script>
-        function login() {
-            window.open('login.html', '_self');
-        }
-        function signup() {
-            window.open('signup.html', '_self');
-        }
-    </script>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Amulya Rattan</a></li>
+      </ul>
+    
+    <ul>
+      
+      <li><a href="#">Home</a></li>
+      <li><a href="#Avatars">Avatars</a></li>
+      <li><a href="#Social Links">Social Links</a></li>
+      <li><a href="#Contact">Contact</a></li>
+      
+     </ul>
+
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <div>
+       <p>Digital Content</p>
+       <p>Creator</p>
+       <p class="name" >
+        Amulya Rattan 
+       </p >
+      </div>
+      <div class="HeroImageHolder">
+        <img srcset="" src="static/Image01.png" alt="image01">
+      </div>
+    </section>
+  </main>
+
 </body>
 
 </html>
