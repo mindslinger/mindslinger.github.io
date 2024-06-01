@@ -60,3 +60,9 @@ nav ul li a{
   color: #d096d1;
   font-size:50px;
 }
+.hero > div > :last-child{
+  font-family: "Cactus Classical Serif", serif;
+  color: #e1baba;
+  font-size: 20px;
+  margin-top: 30px
+}
