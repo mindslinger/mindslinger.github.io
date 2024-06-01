@@ -11,6 +11,7 @@
 html,body{
   width: 100vw;
   height: 100vh;
+  background-color: #000000
 }
 
 
@@ -40,7 +41,7 @@ nav ul li a{
 }
 
 .hero{
-  background-color:#725035;
+  background-color:#654258;
   height: 500px;
   display:flex;
   align-items: center;
@@ -58,12 +59,13 @@ nav ul li a{
 
 .hero > div > p {
   font-family: "Dancing Script", cursive;
-  color: #efbead;
-  font-size:70px;
+  color:#ffffff;
+  font-size:75px;
+  font-weight: 700;
 }
 .hero > div > :last-child{
   font-family: "Cactus Classical Serif", serif;
-  color:#f4eef0;
+  color:#cebbd9;
   font-size: 20px;
   margin-top: 30px
 }
@@ -74,5 +76,20 @@ nav ul li a{
 }
 
 .hero > :last-child > img{
-  width: 400px;
+  width: 450px;
+}
+
+/* For smartphones in portrait mode */
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+  .hero{
+    flex-direction: column;
+    height: 100vh;
+    
+  }
+  .hero> :last-child{
+    height: auto;
+  }
+  .hero > div > p {
+    font-size: 50px;
+  }
 }
