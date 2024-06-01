@@ -40,12 +40,13 @@ nav ul li a{
 }
 
 .hero{
-  background-color:#4c3336;
+  background-color:#725035;
   height: 500px;
   display:flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-direction: row;
+  
 }
 
 .hero :first-child{
@@ -57,12 +58,12 @@ nav ul li a{
 
 .hero > div > p {
   font-family: "Dancing Script", cursive;
-  color: #d096d1;
-  font-size:60px;
+  color: #efbead;
+  font-size:70px;
 }
 .hero > div > :last-child{
   font-family: "Cactus Classical Serif", serif;
-  color: #e1baba;
+  color:#f4eef0;
   font-size: 20px;
   margin-top: 30px
 }
